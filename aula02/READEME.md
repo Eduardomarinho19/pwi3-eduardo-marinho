@@ -1,24 +1,18 @@
 pwi3-Eduardo marinho
-
 Aulas de Programação Web III com o professor João Siles
 
 **Aulas de Programação Web III dia 11/08/2025
-
 Instalação e Configuração do Laravel
-
 Este guia detalha o processo de instalação e a configuração inicial de um projeto Laravel. Siga os passos abaixo para começar.
 
 Pré-requisitos
-
 Antes de iniciar, certifique-se de que seu ambiente de desenvolvimento atende aos seguintes requisitos:
 
-PHP: Versão 8.2 ou superior
+PHP: Versão 8.2 ou superior.
 
-Composer: Gerenciador de dependências do PHP. Você pode baixá-lo
-em getcomposer.org
+Composer: Gerenciador de dependências do PHP. Você pode baixá-lo em getcomposer.org.
 
 Opção 1: Clonar um projeto existente do GitHub
-
 Se você já tem um projeto Laravel em um repositório, siga estes passos para configurá-lo em sua máquina local.
 
 Inicie o XAMPP
@@ -31,18 +25,15 @@ Abra seu terminal (CMD ou PowerShell) e navegue até a pasta htdocs do XAMPP, qu
 
 Bash
 
-   ***cd C:\xampp\htdocs***
+cd C:\xampp\htdocs
+
 Em seguida, clone o seu repositório do GitHub, substituindo a URL abaixo pela URL do seu projeto:
 
 Bash
 
 git clone https://github.com/usuario/repositorio.git
 
-**
-
 Passo 2: Instalação do Laravel
-**
-
 Existem duas formas de criar um novo projeto Laravel. Os comandos abaixo devem ser executados no seu terminal, CMD ou PowerShell. No Windows, é altamente recomendado que você execute o PowerShell como administrador para evitar problemas de permissão.
 
 Opção A: Usando o Composer
@@ -61,6 +52,8 @@ Se você planeja criar muitos projetos Laravel, instalar o Laravel Installer glo
 
 Abra seu terminal e instale o installer com o Composer:
 
+Bash
+
 composer global require laravel/installer
 
 Crie um novo projeto usando o comando laravel new:
@@ -69,9 +62,7 @@ Bash
 
 laravel new nome-do-projeto
 
-2. Instalação e Iniciação de Projeto Laravel
-**
-
+**2. Instalação e Iniciação de Projeto Laravel **
 Depois que o aplicativo for criado, você pode iniciar o servidor de desenvolvimento local do Laravel, o queue worker e o servidor de desenvolvimento do Vite usando o dev script do Composer.
 
 Navegue até o diretório do projeto
@@ -88,9 +79,9 @@ Crie o arquivo de ambiente, gere a chave da aplicação, instale as dependência
 
 Bash
 
-npm install
+npm install 
 npm run build
-
+    
 Instale as dependências do Composer:
 
 bash
@@ -108,7 +99,6 @@ cp .env.example .env
 Configure o arquivo .env:
 
 Abra o arquivo .env e ajuste as configurações de banco de dados, cache, etc., conforme necessário.
-
 Gere a chave da aplicação:
 
 bash
@@ -127,17 +117,7 @@ bash
 
 composer run dev
 
-Sua aplicação estará acessível no seu navegador
+Sua aplicação estará acessível no seu navegador em http://localhost:8000.
 
-para visualizar o banco de dados
-
-instalar a extensão SQLite
-
-ctrl + P e pesquisar sqlite open database
-
-no canto inferior vai ter o sqlite explorer para visualizar o banco
-no terminal rodar php artisan e depois rodar php artisan:seed
-
-entrar no seeders depois em databaseseeder.php e da linha 6 e 18 ate 21 adc comentario e retira os da linhas
-esse simbolo ">" ctrl + p e run curry para criar os nomes,senha,email automatico 
-lembrando q tem q atualizar no sqlite erxplorer nmo canto inferior esquerdo para aparecer
+**Aulas de Programação Web III dia 18/08/2025
+Na aula de hoje, tivemos uma introdução ao Tailwind, um framework CSS para agilizar a criação de interfaces de usuário.
