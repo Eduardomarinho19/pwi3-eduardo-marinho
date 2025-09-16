@@ -141,3 +141,23 @@ no terminal rodar php artisan e depois rodar php artisan:seed
 entrar no seeders depois em databaseseeder.php e da linha 6 e 18 ate 21 adc comentario e retira os da linhas
 esse simbolo ">" ctrl + p e run curry para criar os nomes,senha,email automatico 
 lembrando q tem q atualizar no sqlite erxplorer nmo canto inferior esquerdo para aparecer
+
+
+
+php artisan make:view cliente
+
+serve para criar uma nova view chamada cliente em "resources"
+
+obs: "ctrl + p é a pesquisa de arquivo do vscode"
+
+
+modificar o banco de dados na tabela cliente 
+
+php artisan make: create-table-cliente 
+para cria umas tabela chamada cliente 
+
+php artisan migrate vai fazer rodar as migrations criada 
+
+ php artisan make:model Cliente  
+ para cira uma nova model 
+ model é responsavel pela comunicação com o banco de dados de extrema importancia para passar os dados 
